@@ -26,7 +26,7 @@ dimple:
 # 开发环境配置
 server:
   # 服务端口
-  port: 80
+  port: 9090
   servlet:
     # 项目contextPath
     context-path: /
@@ -56,8 +56,8 @@ spring:
   mail:
     host: smtp.163.com
     default-encoding: UTF-8
-    username: dimple_blog@163.com
-    password:
+    username: wqexpore@163.com
+    password: wqexpore123
   # 模板引擎
   thymeleaf:
     mode: HTML

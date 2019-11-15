@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>Dimple个人博客系统后台首页</title>
-    <meta name="keywords" content="Dimple个人博客系统，边小丰的个人博客">
-    <meta name="description" content="边小丰的个人博客，专注Java技术">
+    <title>Wqexpore个人博客系统后台首页</title>
+    <meta name="keywords" content="Wqexpore个人博客系统，边小丰的个人博客">
+    <meta name="description" content="Wqexpore的个人博客，专注Java技术">
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html"/>
     <![endif]-->
@@ -30,7 +30,7 @@
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
                 <li class="logo">
-                    <span class="logo-lg">Dimple Blog</span>
+                    <span class="logo-lg">Wqexpore Blog</span>
                 </li>
                 <li>
                     <div class="user-panel">
@@ -41,15 +41,10 @@
                                      class="img-circle" alt="User Image">
                             </div>
                         </a>
-                        <div class="pull-left info">
-                            <p>[[${user.loginName}]]</p>
-                            <a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> 在线</a>
-                            <a th:href="@{logout}" style="padding-left:5px;"><i class="fa fa-sign-out text-danger"></i>
-                                注销</a>
-                        </div>
+
                     </div>
                 </li>
-                <li class="active">
+                <li class="active" style="height: 40px;margin-top: 20px" >
                     <a href="/dashboard/main" class="menuItem"><i class="fa fa-home"></i> <span
                             class="nav-label">主页</span> </a>
                 </li>
@@ -130,6 +125,11 @@
             <button class="roll-nav roll-right tabRight">
                 <i class="fa fa-forward"></i>
             </button>
+            <div  class="btn-group roll-nav roll-right">
+                <p>[[${user.loginName}]]</p>
+                <a href="javascript:void(0)"><i class="fa fa-circle text-success"></i> 在线</a>
+                <a th:href="@{logout}" style="padding-left:5px;"><i class="fa fa-sign-out text-danger"></i>注销</a>
+            </div>
             <div class="btn-group roll-nav roll-right">
                 <button class="dropdown J_tabClose" data-toggle="dropdown">
                     页签操作<span class="caret"></span>
@@ -143,6 +143,7 @@
             </div>
             <a href="javascript:void(0)" class="roll-nav roll-right tabReload"><i class="fa fa-refresh"></i> 刷新</a>
         </div>
+
 
         <a id="ax_close_max" class="ax_close_max" href="javascript:void(0)" title="关闭全屏"> <i
                 class="fa fa-times-circle-o"></i> </a>

@@ -39,4 +39,9 @@ public class AddressUtils {
         }
         return address;
     }
+
+    public static void main(String[] args) {
+        String realAddressByIP = getRealAddressByIP("61.151.178.197");
+        System.out.println(realAddressByIP);
+    }
 }

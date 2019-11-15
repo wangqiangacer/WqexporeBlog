@@ -3,6 +3,7 @@ package com.dimple.common.utils;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.dimple.common.utils.http.HttpUtils;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -53,6 +54,7 @@ public final class QQUtil {
 
 
     public static void main(String[] args) {
-        getQQByQQNum(726567707);
+        QQInfo info = getQQByQQNum(850994281);
+        System.out.println(info);
     }
 }

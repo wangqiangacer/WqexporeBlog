@@ -3,7 +3,7 @@
 <html lang="zh" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <title>Dimple的个人博客</title>
+    <title>Wqexpre的个人博客</title>
     <meta name="baidu_union_verify" content="7aef518d672b5859ca390cabb140abf3">
     <div th:include="include-front :: head('','')"></div>
     <style>
@@ -262,13 +262,13 @@
                         <p th:text="${blog.summary}"></p>
                         <ul>
                             <li>
-                                <a th:title="${'边小丰'+#dates.format(blog.createTime, 'yyyy-MM-dd')+'发表'}">
+                                <a th:title="${'Wqexpre'+#dates.format(blog.createTime, 'yyyy-MM-dd')+'发表'}">
                                     <i class="fa fa-clock-o"></i>
                                     <span th:text="${#dates.format(blog.createTime, 'yyyy-MM-dd')}"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="/f/about.html" title="作者： 边小丰"><i class="fa fa-user"></i>边小丰</a>
+                                <a href="/f/about.html" title="作者： Wqexpre"><i class="fa fa-user"></i>Wqexpre</a>
                             </li>
                             <li><a th:title="${'已有'+blog.commentCount+'条评论'}"
                                    th:href="${'/f/article/'+blog.blogId+'.html#Comment'}"

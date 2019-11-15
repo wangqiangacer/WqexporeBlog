@@ -21,6 +21,8 @@ import com.dimple.project.system.user.domain.User;
 import com.dimple.project.system.user.domain.UserStatus;
 import com.dimple.project.system.user.service.UserService;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @className: LoginService
  * @description: 登录校验方法

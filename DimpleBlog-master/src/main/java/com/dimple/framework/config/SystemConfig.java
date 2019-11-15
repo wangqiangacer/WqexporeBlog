@@ -32,7 +32,7 @@ public class SystemConfig {
     /**
      * 获取地址开关
      */
-    private static boolean addressEnabled;
+    private static boolean addressEnabled =true;
 
     public String getName() {
         return name;

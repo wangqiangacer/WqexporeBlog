@@ -23,14 +23,14 @@ public class MailServiceImplTest {
 
     @Test
     public void testSendSimpleMail() {
-        String to = "bianxiaofeng_cdu@163.com";
-        String subject = "Test";
-        String content = "test";
+        String to = "1084753221@qq.com";
+        String subject = "来自外星的一封神秘邮件";
+        String content = "亲爱的，我想你了";
         mailServiceImpl.sendSimpleMail(to, subject, content);
     }
 
     @Test
     public void testReplyEmail() {
-        mailServiceImpl.sendReplyEmail("bianxiaofeng@sohu.com", 15, "原始内容", "", "http://www.bianxiaofeng.com");
+        mailServiceImpl.sendReplyEmail("1084753221@qq.com", 15, "原始内容", "", "http://www.bianxiaofeng.com");
     }
 }

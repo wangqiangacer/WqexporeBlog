@@ -142,33 +142,35 @@
     <div id="toTop">返回顶部</div>
     <script>
         /* 鼠标特效 */
-        // var a_idx = 0;
-        // jQuery(document).ready(function ($) {
-        //     $("body").click(function (e) {
-        //         var a = new Array("❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤", "❤友善❤");
-        //         var $i = $("<span></span>").text(a[a_idx]);
-        //         a_idx = (a_idx + 1) % a.length;
-        //         var x = e.pageX,
-        //             y = e.pageY;
-        //         $i.css({
-        //             "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
-        //             "top": y - 20,
-        //             "left": x,
-        //             "position": "absolute",
-        //             "font-weight": "bold",
-        //             "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
-        //         });
-        //         $("body").append($i);
-        //         $i.animate({
-        //                 "top": y - 180,
-        //                 "opacity": 0
-        //             },
-        //             1500,
-        //             function () {
-        //                 $i.remove();
-        //             });
-        //     });
-        // });
+        var a_idx = 0;
+        jQuery(document).ready(function ($) {
+            $("body").click(function (e) {
+                // var a = new Array("❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤",
+                //     "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤", "❤王强❤","❤友善❤");
+                var a =new Array("❤富强❤","❤民主❤", "❤文明❤")
+                var $i = $("<span></span>").text(a[a_idx]);
+                a_idx = (a_idx + 1) % a.length;
+                var x = e.pageX,
+                    y = e.pageY;
+                $i.css({
+                    "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+                });
+                $("body").append($i);
+                $i.animate({
+                        "top": y - 180,
+                        "opacity": 0
+                    },
+                    1500,
+                    function () {
+                        $i.remove();
+                    });
+            });
+        });
         /**
          * 隐藏加载条
          */
@@ -205,25 +207,26 @@
                 <img class="img-circle" src="/front/images/ava.png"/>
             </a>
         </div>
-        <div class="author-name"><span class="blue-text">边小丰</span>
+        <div class="author-name"><span class="blue-text">Wqexpore</span>
             <p></p>
         </div>
     </div>
     <!--关注我-->
     <div class="focus-me bg-color animation-div">
-        <h4 class="index-title"><i class="fa fa-heart"></i>关注我
+        <h4 class="index-title"><i class="fa fa-heart"></i>
+            <a href="https://github.com/wangqiangacer" >关注我</a>
             <small>Focus Me</small>
         </h4>
         <div class="xiangguan">
             <div>
                 <a class="benbo"
-                   href="mailto:bianxiaofeng@sohu.com" rel="nofollow" target="_blank">
+                   href="https://github.com/wangqiangacer" rel="nofollow" target="_blank">
                     <i class="fa fa-envelope fa-spin"></i>
                 </a>
                 <span>邮件</span>
             </div>
             <div>
-                <a class="github" href="https://github.com/DimpleFeng" rel="nofollow" target="_blank">
+                <a class="github" href="https://github.com/wangqiangacer" rel="nofollow" target="_blank">
                     <i class="fa fa-github-square  fa-spin"></i>
                 </a>
                 <span>github</span></div>
@@ -234,7 +237,7 @@
             </div>
         </div>
         <div class="mail-dy">
-            <img src="/front/images/weixin.png">
+            <img src="/front/images/weichart.png">
             <i class="fa fa-remove fx-close"></i>
         </div>
     </div>
